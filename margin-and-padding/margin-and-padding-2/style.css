@@ -1,4 +1,6 @@
-body {
+/* My initial solution */
+
+/* body {
   background: #eee;
   font-family: sans-serif;
 }
@@ -11,17 +13,72 @@ body {
 
 .title {
   background: #e3f4ff;
+  padding: 8px;
+  border: 10px solid white;
+  margin-bottom: -10px
 }
 
 .content {
   background: #e3f4ff;
+  padding: 10px 5px;
+  border: 10px solid white;
+  margin-bottom: -10px
 }
 
 .button-container {
   background: #e3f4ff;
+  border: 10px solid white;
+  text-align: center;
+  padding: 8px;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block;
+  padding: 5px 20px;
+  margin: auto;
+} */
+
+/* ----------------------------------------- */
+/* revised solution */
+
+body {
+  background: #eee;
+  font-family: sans-serif;
+}
+
+.card {
+  width: 400px;
+  background: #fff;
+  margin: 16px auto;
+  padding: 8px
+}
+
+.title {
+  background: #e3f4ff;
+  margin-top: 0; 
+  margin-bottom: 8px;
+  /* because title is a h1, it has predefined margins */
+  padding: 8px
+}
+
+.content {
+  background: #e3f4ff;
+  margin-bottom: 8px;
+  padding: 16px 8px;
+}
+
+.button-container {
+  background: #e3f4ff;
+  text-align: center;
+  padding: 8px;
+}
+
+button {
+  background: white;
+  border: 1px solid #eee;
+  display: block;
+  margin: auto;
+  padding: 8px 20px
 }
