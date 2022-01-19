@@ -1,6 +1,11 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-evenly;
+  /* could have set to space-between and avoid using margin: auto on logo */
+  align-items: center;
+  padding: 1em;
 }
 
 .logo {
@@ -9,12 +14,18 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  margin: auto;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  gap: 1em;
+  margin-left: -2em;
+  margin-right: 1em;
 }
+
 
 a {
   font-size: 22px;
